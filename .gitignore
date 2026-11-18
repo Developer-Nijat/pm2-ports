@@ -1,3 +1,6 @@
 node_modules/
 *.tgz
 .DS_Store
+
+# Draft posts (not part of the package)
+posts/
