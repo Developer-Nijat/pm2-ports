@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.0.1 - 2026-11-18
+
+- README: npm badges, `npx` usage, Windows note, contributing section
+
 ## 1.0.0 - 2026-11-18
 
 First npm release.

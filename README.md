@@ -1,5 +1,10 @@
 # pm2-ports
 
+[![npm version](https://img.shields.io/npm/v/pm2-ports.svg)](https://www.npmjs.com/package/pm2-ports)
+[![npm downloads](https://img.shields.io/npm/dm/pm2-ports.svg)](https://www.npmjs.com/package/pm2-ports)
+[![license](https://img.shields.io/npm/l/pm2-ports.svg)](LICENSE)
+[![node](https://img.shields.io/node/v/pm2-ports.svg)](https://nodejs.org)
+
 Show which TCP ports your [PM2](https://pm2.keymetrics.io/) processes are **really** listening on.
 
 ```
@@ -24,8 +29,17 @@ processes the app forked.
 npm install -g pm2-ports
 ```
 
+Or run it once without installing:
+
+```bash
+npx pm2-ports
+```
+
 Requires Node.js 18+ on Linux (macOS works through `lsof`), PM2, and one of `ss`
 (package `iproute2`, present on most distributions), `netstat` or `lsof`.
+
+> **Windows is not supported.** The tool relies on `ss` / `netstat` / `lsof` and
+> `/proc`, so use it on your Linux or macOS server (or WSL).
 
 ### Servers without internet access
 
@@ -117,6 +131,12 @@ echo 'export PATH="$HOME/.npm-global/bin:$PATH"' >> ~/.bashrc && source ~/.bashr
 | 1 | PM2 or the port tools are not available |
 | 2 | Unknown option |
 
+## Contributing
+
+Issues and pull requests are welcome at
+[github.com/Developer-Nijat/pm2-ports](https://github.com/Developer-Nijat/pm2-ports/issues).
+Run the tests with `npm test`.
+
 ## License
 
-MIT
+[MIT](LICENSE)

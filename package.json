@@ -1,6 +1,6 @@
 {
   "name": "pm2-ports",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Show which TCP ports your PM2 processes are really listening on",
   "keywords": [
     "pm2",
