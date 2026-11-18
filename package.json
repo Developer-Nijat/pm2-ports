@@ -1,0 +1,46 @@
+{
+  "name": "pm2-ports",
+  "version": "1.0.0",
+  "description": "Show which TCP ports your PM2 processes are really listening on",
+  "keywords": [
+    "pm2",
+    "ports",
+    "port",
+    "listen",
+    "netstat",
+    "ss",
+    "lsof",
+    "cli",
+    "devops",
+    "linux"
+  ],
+  "license": "MIT",
+  "author": "Nijat Aliyev",
+  "homepage": "https://github.com/Developer-Nijat/pm2-ports#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Developer-Nijat/pm2-ports.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Developer-Nijat/pm2-ports/issues"
+  },
+  "bin": {
+    "pm2-ports": "bin/pm2-ports.js"
+  },
+  "main": "lib/parse.js",
+  "files": [
+    "bin/",
+    "lib/"
+  ],
+  "scripts": {
+    "test": "node --test",
+    "prepublishOnly": "npm test"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "os": [
+    "linux",
+    "darwin"
+  ]
+}
